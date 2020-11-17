@@ -16,6 +16,40 @@
 <script src="../js/index.js">   </script>
 
 <body>
+    <form name="contact" method="POST" data-netlify="true">
+        <p>
+            <label>Your Name: <input type="text" name="name"/></label>
+        </p>
+        <p>
+            <label>Your Phone Number: <input type="text" name="phNumber"/></label>
+        </p>
+        <p>
+            <label>Services Required: <select name="services[]" multiple>
+                <option value="iPhoneScreen">iPhone Screen Replacement</option>
+                <option value="iPhoneBattery">iPhone Battery Replacement</option>
+                <option value="iPhonePassword">iPhone Password Removal</option>
+                <option value="AndroidScreen">Android Screen Replacement</option>
+                <option value="AndroidBattery">Android Battery Replacement</option>
+                <option value="AdnroidPassword">Android Password Removal</option>
+                <option value="ComputerScreen">Computer Screen Replacement</option>
+                <option value="ComputerBattery">Computer Battery Replacement</option>
+                <option value="ComputerPassword">Computer Password Removal</option>
+                <option value="ComputerWinInstall">Computer Install Windows</option>
+                <option value="ComputerHardUpgrade">Computer Hardware Upgrade</option>
+                <option value="ComputerFileTransfer">Computer File Transfer</option>
+                <option value=""></option>
+                <option value=""></option>
+            </select></label>
+        </p>
+        <p>
+            <label>Message: <textarea name="message"></textarea></label>
+        </p>
+        <p>
+            <button type="submit">Send</button>
+        </p>
+    </form>
+
+    <!--
     <div class="selecter">
         <p class="main">Please select device and what services are required below:</p>
         <button onclick="window.location.href='/Live/devices/iPhone.html'" class="mainButton">iPhone</button>
@@ -23,6 +57,7 @@
         <button onclick="window.location.href='/Live/devices/Computer.html'" class="mainButton">Computer</button>
         <button onclick="window.location.href='/Live/devices/Mac.html'" class="mainButton">Mac Computer</button>   
     </div>
+    -->
 </body>
 
 <footer>
