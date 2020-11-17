@@ -20,6 +20,39 @@
         <button onclick="iPhoneScreen()" class="mainButton">Screen Repair</button>
         <button onclick="iPhoneBattery()" class="mainButton">Battery Repair</button>
         <button onclick="iPhonePassword()" class="mainButton">Password Removal</button>
+        <br><br>
+        <form name="contact" method="POST" data-netlify="true">
+            <p>
+                <label>Your Name: <input type="text" name="name"/></label>
+            </p>
+            <p>
+                <label>Your Phone Number: <input type="text" name="phNumber"/></label>
+            </p>
+            <p>
+                <label>Services Required: <select name="services[]" multiple>
+                    <option value="iPhoneScreen">iPhone Screen Replacement</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select></label>
+            </p>
+            <p>
+                <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+                <button type="submit">Send</button>
+            </p>
+        </form>
         <br><br><br>
         <button onclick="window.location.href='/Live/index.html'" class="mainButton">Go Back</button>
     </div>
